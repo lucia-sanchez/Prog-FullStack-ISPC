@@ -1,1 +1,2 @@
-# Prog-FullStack-ISPC
+# Programación FullStack - ISPC
+Grupo N°49
