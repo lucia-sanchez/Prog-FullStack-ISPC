@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Contacto- Los Byters</title>
+        <link rel="stylesheet" href="reset.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="box">
+                <h1><img src= alt=""></h1>
+                <nav>
+                 
+                </nav>
+            </div>  
+        </header>
+        <main>
+            <form>
+                <label for="nombreyapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreyapellido" class="input-padron" required>
+            
+                <label for="correoe">Correo electronico</label>
+                <input type="email" id="correoe" class="input-padron" required placeholder="email@dominio.com">
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron"></textarea>
+                
+                <fieldset>
+                    <legend>¿Como le gustaria que lo contactemos?</legend>
+                    
+                    <label for="radio-email"><input type="radio"  name="contacto" id="radio-email" value="email">Email</label>
+
+                    <label for="radio-telefono"><input type="radio"  name="contacto" id="radio-telefono" value="telefono">Telefono</label>
+
+                    <label for="radio-whatsapp"> <input type="radio"  name="contacto" id="radio-whatsapp" value="whatsapp" checked>WhatsApp</label>
+                
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿En que horario prefiere ser contactado?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>    
+                
+                <label><input type="checkbox" class="checkbox" checked>¿Le gustaria recibir novedades de la Empresa</label>
+                
+                <input type="submit" value="Enviar Formulario" class="enviar">
+            </form>
+             
+        </main>
+
+        <footer>
+            <img src="" alt="">
+            <p class="parrafo-pie">&copy Copyright Los Byters</p>
+        </footer>
+    </body>
