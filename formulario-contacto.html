@@ -3,20 +3,41 @@
     <head>
         <meta charset="UTF-8">
         <title> Contacto- Los Byters</title>
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="reset.css">
     </head>
 
     <body>
         <header>
-            <div class="box">
-                <h1><img src= alt=""></h1>
+            <div class="box"><!--se crea una clase que contenga el logo y el nav para mejorar su posicion-->
+                <h1><img src="pngegg (1).png" alt="Logo Los Byters"></h1>
                 <nav>
-                 
+                    <ul class="barra">
+                        <li><a href="index.html"> Home</a></li>
+                        <li><a href="registro.html">Registro</a></li>
+                        <li><a href="ingreso.html">Ingreso</a></li>
+                    </ul>
                 </nav>
-            </div>  
+            </div>    
         </header>
+
         <main>
+            <h2 class="tittle">Formulario de contacto</h2>
             <form>
+                <fieldset>
+                    <legend>Motivo</legend>
+                    <select>
+                        <option>Asesoramiento comercial</option>
+                        <option>Devolucion de dinero</option>
+                        <option>Generacion de etiqueta</option>
+                        <option>Problema de factura</option>
+                        <option>Seguimiento de envio</option>
+                    </select>
+                </fieldset> 
+                
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="5" id="mensaje" class="input-padron"></textarea>
+
                 <label for="nombreyapellido">Nombre y Apellido</label>
                 <input type="text" id="nombreyapellido" class="input-padron" required>
             
@@ -25,9 +46,6 @@
 
                 <label for="telefono">Telefono</label>
                 <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
-
-                <label for="mensaje">Mensaje</label>
-                <textarea cols="70" rows="10" id="mensaje" class="input-padron"></textarea>
                 
                 <fieldset>
                     <legend>¿Como le gustaria que lo contactemos?</legend>
@@ -37,17 +55,9 @@
                     <label for="radio-telefono"><input type="radio"  name="contacto" id="radio-telefono" value="telefono">Telefono</label>
 
                     <label for="radio-whatsapp"> <input type="radio"  name="contacto" id="radio-whatsapp" value="whatsapp" checked>WhatsApp</label>
-                
                 </fieldset>
 
-                <fieldset>
-                    <legend>¿En que horario prefiere ser contactado?</legend>
-                    <select>
-                        <option>Mañana</option>
-                        <option>Tarde</option>
-                        <option>Noche</option>
-                    </select>
-                </fieldset>    
+  
                 
                 <label><input type="checkbox" class="checkbox" checked>¿Le gustaria recibir novedades de la Empresa</label>
                 
