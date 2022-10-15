@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front-Line Envios</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./Logo FLEnvios2.png" alt="logo" />
+      <div class="botones">
+        <button type="submit" id="ingreso">Home</button>
+        <button type="submit" id="registro">Cerrar sesión</button>
+      </div>
+    </header>
+    <nav class="navegacion">
+      <a href="./index.html"><button type="submit">Registro</button></a>
+      <a href="#bloque-seguimiento"><button type="submit">Retiro</button></a>
+      <a href="#bloque-calculo"><button type="submit">Carga</button></a>
+      <a href="#bloque-sucursales"><button type="submit">Descarga</button></a>
+    </nav>
+    
+
+  </head>
+ 
+    <section>
+      <h2>Registro</h2>
+      <input
+        type="text"
+        placeholder="DNI destinatario"
+        name="DNI destinatario"
+        required
+      /><br>
+      <input
+        type="text"
+        placeholder="DNI remitente"
+        name="DNI remitente"
+        required
+      /><br>
+      <input type="text" placeholder="Peso" name="Peso" required />
+      <label for="">Tipo de Envio</label>
+      <select name="" id="">
+        <option value="">A</option>
+        <option value="">B</option>
+        <option value="">C</option>
+      </select>
+      <br>
+      <!--en el input "Destino" devería mostrar los destinos posibles haciendo una busqueda que coincida con las palabras que se vayan escribiendo en la barra de busqueda-->
+      <input type="text" placeholder="Destino" name="Destino" required /><br />
+      <!--acá el imput "Precio", usando la información de peso, tipo de envio, destino y sucursal que regitra el paquete, debería hacer el calculo de cuanto costaría y mostrarlo-->
+      <input type="text" placeholder="Precio" name="Precio" required />
+      <label for="">Estado</label>
+      <select name="" id="">
+        <option value="">Pagado</option>
+        <option value="">Por Pagar</option></select><br>
+      <form action=""><button type="submit">Guardar</button><br /></form>
+      </section>
+    <br><br>
+
+    <section>
+      <h2>Retiro</h2>
+      <!--los pedacitos de código que se agrege a "Codigo de Paquete" debería comparar los códigos que se encuentran en la sucursal y ayudarte completandolo-->
+      <input
+        type="text"
+        placeholder="Código de Paquete"
+        name="Código de Paquete"
+        required
+      />
+      <!--en el botón "Retirar" tiene que controlar que el código ingresado en el imput "Código de Paquete" coincida con 1 de los paquetes que se encuentran dentro de la sucursal desde donde se está anotando, de ser correcto tiene que cambiar el estado del paquete de "Por Pagar" a "Pagado", también colocarle e lrasgo "Entregado" y guardarle la fecha, la hora y la sucursal de la cual fue retirado-->
+      <button type="submit">Retirar</button><br />
+    </section>
+    <br><br>
+
+    <section>
+      <h2>Carga</h2>
+      <textarea name="" id="" cols="30" rows="5"></textarea><br />
+      <select name="" id="">
+        <option value="">Vehículos</option>
+        <option value="">Renault 12</option>
+        <option value="">Ford Focus</option>
+        <option value="">Fiat Palio</option>
+         </select>
+         <button type="submit">Salida</button>
+    </section>
+    <br><br>
+
+    <section>
+      <h2>Descarga</h2>
+      <textarea name="" id="" cols="30" rows="5"></textarea><br />
+      <select name="" id="">
+        <option value="">Vehículos</option>
+        <option value="">Renault 12</option>
+        <option value="">Ford Focus</option>
+        <option value="">Fiat Palio</option>
+         </select>
+      <button type="submit">Llegada</button><br />
+    </section>
+    <footer>
+        <div>
+            <ul class="dudas">Que necesitas saber?
+                <li><a href="envio.html"> Seguir un envio</a></li>
+                <li><a href="maps.html">Sucursales</a></li>
+                <li><a href="costo.html">Costo de envio</a></li>
+            </ul>
+            <ul class="nosotros">Nosotros
+                <li><a href="byters.html">La empresa</a></li>
+                <li><a href="curriculum.html">Trabaja con nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+            </ul>
+            <ul class="ayuda">Ayuda
+                <li><a href="preguntas-frecuentes.html"> Preguntas frecuentes</a></li>
+                <li>0800-XXX-XXXX</li>
+                <li>atenciondigital@byters.com</li>
+            </ul>
+        </div>    
+        <div class="redes">Nuestras redes
+            <a href="#"><i class="fa-brands fa-facebook">Facebook</i></a>
+            <a href="#"><i class="fa-brands fa-twitter">Twitter</i></a>
+            <a href="#"><i class="fa-brands fa-instagram">Instagram</i></a>
+        </div>
+        
+    </footer> 
+  </body>
+</html>
