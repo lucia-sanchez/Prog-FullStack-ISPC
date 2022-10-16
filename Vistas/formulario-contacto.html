@@ -9,7 +9,7 @@
 
     <body>
         <header>
-            <div class="box"><!--se crea una clase que contenga el logo y el nav para mejorar su posicion-->
+            <section class="box"><!--se crea una clase que contenga el logo y el nav para mejorar su posicion-->
                 <h1><img src="pngegg (1).png" alt="Logo Los Byters"></h1>
                 <nav>
                     <ul class="barra">
@@ -18,13 +18,13 @@
                         <li><a href="ingreso.html">Ingreso</a></li>
                     </ul>
                 </nav>
-            </div>    
+            </section>    
         </header>
 
         <main>
             <h2 class="tittle">Formulario de contacto</h2>
             <form>
-                <fieldset>
+                <section>
                     <legend>Motivo</legend>
                     <select>
                         <option>Asesoramiento comercial</option>
@@ -33,7 +33,7 @@
                         <option>Problema de factura</option>
                         <option>Seguimiento de envio</option>
                     </select>
-                </fieldset> 
+                </section> 
                 
                 <label for="mensaje">Mensaje</label>
                 <textarea cols="70" rows="5" id="mensaje" class="input-padron"></textarea>
@@ -47,7 +47,7 @@
                 <label for="telefono">Telefono</label>
                 <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
                 
-                <fieldset>
+                <section>
                     <legend>¿Como le gustaria que lo contactemos?</legend>
                     
                     <label for="radio-email"><input type="radio"  name="contacto" id="radio-email" value="email">Email</label>
@@ -55,7 +55,7 @@
                     <label for="radio-telefono"><input type="radio"  name="contacto" id="radio-telefono" value="telefono">Telefono</label>
 
                     <label for="radio-whatsapp"> <input type="radio"  name="contacto" id="radio-whatsapp" value="whatsapp" checked>WhatsApp</label>
-                </fieldset>
+                </section>
 
   
                 
@@ -65,9 +65,29 @@
             </form>
              
         </main>
-
-        <footer>
-            <img src="" alt="">
-            <p class="parrafo-pie">&copy Copyright Los Byters</p>
-        </footer>
+<footer>
+    <section>
+        <ul class="dudas">Que necesitas saber?
+            <li><a href="envio.html"> Seguir un envio</a></li>
+            <li><a href="maps.html">Sucursales</a></li>
+            <li><a href="costo.html">Costo de envio</a></li>
+        </ul>
+        <ul class="nosotros">Nosotros
+            <li><a href="byters.html">La empresa</a></li>
+            <li><a href="curriculum.html">Trabaja con nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+        </ul>
+        <ul class="ayuda">Ayuda
+            <li><a href="preguntas-frecuentes.html"> Preguntas frecuentes</a></li>
+            <li>0800-XXX-XXXX</li>
+            <li>atenciondigital@byters.com</li>
+        </ul>
+    </section>    
+    <section class="redes">Nuestras redes
+        <a href="#"><i class="fa-brands fa-facebook">Facebook</i></a>
+        <a href="#"><i class="fa-brands fa-twitter">Twitter</i></a>
+        <a href="#"><i class="fa-brands fa-instagram">Instagram</i></a>
+    </section>
+    
+</footer>   
     </body>
