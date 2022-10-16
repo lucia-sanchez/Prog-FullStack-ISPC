@@ -1,61 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Front-Line Envios</title>
-</head>
-<body>
+    <link rel="stylesheet" href="styleHome.css" />
+  </head>
+  <body>
     <header>
-        <img class="logo" src="./img/Logo FLEnvios2.png" alt="logo">
+      <div class="headerCont">
+        <img class="logo" src="Logo-FLEnvios2.png" alt="logo" />
         <div class="botones">
-            <button type="submit" id="ingreso" >Ingresar</button>
-            <button type="submit" id="registro">Registrarse</button>
+          <button type="submit" id="ingreso">Ingresar</button>
+          <button type="submit" id="registro">Registrarse</button>
         </div>
+      </div>
     </header>
-     <nav class="navegacion">
-            <a href="./index.html"> <button type="submit">Inicio</button> </a>
-            <a href="#bloque-seguimiento"><button type="submit">Seguimiento</button></a>
-            <a href="#bloque-calculo"><button type="submit">Calculadora</button></a>
-            <a href="#bloque-sucursales"><button type="submit">Sucursales</button></a>
-            <a href="#redes"><button type="submit">Redes</button></a>
-            <a href="#faq"><button type="submit"> FAQ</button></a>  
-        </nav>
+    <nav class="navegacion">
+      <a href="./index.html"> <button type="submit">Inicio</button> </a>
+      <a href="#bloque-seguimiento"
+        ><button type="submit">Seguimiento</button></a
+      >
+      <a href="#bloque-calculo"><button type="submit">Calculadora</button></a>
+      <a href="#bloque-sucursales"><button type="submit">Sucursales</button></a>
+      <a href="#redes"><button type="submit">Redes</button></a>
+      <a href="#faq"><button type="submit">FAQ</button></a>
+    </nav>
     <main class="bloques-principales">
-        <div id="bloque-seguimiento">
-           <h3>Seguí tu paquete</h3>
-                <form action="">
-                    <p>Numero de seguimiento: </p>
-                        <input type="search" name="seguimiento" placeholder="Ingresa tu numero de seguimiento" required>
-                        <input type="submit" value="Buscar">  
-                </form>
-        </div>
-        <div id="bloque-calculo">
-            Calculá tu Envío
-        </div>
-        <div id="bloque-sucursales">
-            Sucursales
-        </div>
-        <div id="bloque-nosotros">
-            Nosotros
-        </div>
-        <div class="carrusel">
-            Carrusel de Imagenes con Boostrap
-        </div>
+      <section id="bloque-seguimiento">
+        <h3>Seguí tu paquete</h3>
+        <form action="">
+          <p>Numero de seguimiento:</p>
+          <input
+            type="search"
+            name="seguimiento"
+            placeholder="Ingresa tu numero de seguimiento"
+            required
+          />
+          <input type="submit" value="Buscar" />
+        </form>
+      </section>
+      <section id="bloque-calculo">Calculá tu Envío</section>
+      <section id="bloque-sucursales">Sucursales</section>
+      <section id="bloque-nosotros">Nosotros</section>
+      <section class="carrusel">Carrusel de Imagenes con Boostrap</section>
     </main>
     <footer>
-        <ul id="contactos">
-            <li><a href="http://" target="_blank" rel="noopener noreferrer">Atención al cliente</a></li>
-            <li><a href="http://" target="_blank" rel="noopener noreferrer">Reclamos</a></li>
-            <li><a href="http://" target="_blank" rel="noopener noreferrer" id="faq">FAQ</a></li>
-            <li><a href="http://" target="_blank" rel="noopener noreferrer">Formulario de contacto</a></li>
-        </ul>
-        <ul id="redes">
-            <li><a href="http://" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-            <li><a href="http://" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-            <li><a href="http://" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        </ul>
+      <ul id="contactos">
+        <li>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            >Atención al cliente</a
+          >
+        </li>
+        <li>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            >Reclamos</a
+          >
+        </li>
+        <li>
+          <a href="http://" target="_blank" rel="noopener noreferrer" id="faq"
+            >FAQ</a
+          >
+        </li>
+        <li>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            >Formulario de contacto</a
+          >
+        </li>
+      </ul>
+      <ul id="redes">
+        <li>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            >Facebook</a
+          >
+        </li>
+        <li>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            >Twitter</a
+          >
+        </li>
+        <li>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            >Instagram</a
+          >
+        </li>
+      </ul>
     </footer>
-</body>
+  </body>
 </html>

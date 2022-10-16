@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin: 0%;
+    background-color: rgb(196, 196, 196);
+}
+header{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    
+}
+.headerCont{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    background-color: black;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+h3{
+    margin: 0%;
+}
+button a{
+    text-decoration: none;
+    color:inherit
+}
+button{
+    height: 3em;
+    width: auto;
+    background-color: rgb(45, 45, 45);
+    color: #fff;
+    padding: 0 20px ;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: rgb(255, 119, 0);
+    color: black;
+}
+.sesion{
+    background-color: rgb(73, 139, 230);
+    height: 80%;
+}
+.sesion:hover{
+    background-color: rgb(255, 119, 0);
+    color: black;
+}
+.logoBar{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.navCont{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    height: 35vw;
+    width: 60%;
+    background-color: white;
+    margin: 0 auto;
+}
+.s2{
+    background-color: black;
+}
+.s3{
+    background-color: rgb(255, 119, 0);
+}
+footer{
+    margin: 0;
+    background-color: black;
+    color: #fff;
+}
+footer p{
+    margin: 0%;
+    padding: 2em 10%;
+}
