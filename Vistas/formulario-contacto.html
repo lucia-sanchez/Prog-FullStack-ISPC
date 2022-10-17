@@ -20,10 +20,10 @@
   <body>
     <header>
       <div class="headerCont">
-        <img class="logo" src="images/Logo-FLEnvios2.png" alt="logo" />
+        <img class="logo" src="images/Logo-FLEnvios naranja.png" alt="logo" />
         <div class="botones">
-          <button type="submit" id="ingreso">Ingresar</button>
-          <button type="submit" id="registro">Registrarse</button>
+          <a href="iniciar_sesion.html"><button type="submit" id="ingreso">Ingresar</button></a>
+          <a href="iniciar_sesion.html"><button type="submit" id="registro">Registrarse</button></a>
         </div>
       </div>
     </header>
@@ -33,57 +33,79 @@
         <i class="fas fa-bars"></i>
       </label>
       <ul>
-        <li><a class="" href="">Inicio</a></li>
-        <li><a href="">Seguimiento</a></li>
+        <li><a class="" href="index.html">Inicio</a></li>
+        <!-- <li><a href="">Seguimiento</a></li>
         <li><a href="#bloque-calculo">Calculadora</a></li>
         <li><a href="#bloque-sucursales">Sucursales</a></li>
-        <li><a href="#carrusel">Nosotros</a></li>
-        <li><a href="">Contacto</a></li>
+        <li><a href="#carrusel">Nosotros</a></li> -->
+        <!-- <li><a href="formulario-contacto.html">Contacto</a></li> -->
       </ul>
     </nav>
 
-        <main>
-            <h2 class="tittle">Formulario de contacto</h2>
-            <form>
-                <section>
-                    <legend>Motivo</legend>
-                    <select>
-                        <option>Asesoramiento comercial</option>
-                        <option>Devolucion de dinero</option>
-                        <option>Generacion de etiqueta</option>
-                        <option>Problema de factura</option>
-                        <option>Seguimiento de envio</option>
-                    </select>
-                </section> 
-                
-                <label for="mensaje">Mensaje</label>
-                <textarea cols="70" rows="5" id="mensaje" class="input-padron"></textarea>
-
-                <label for="nombreyapellido">Nombre y Apellido</label>
-                <input type="text" id="nombreyapellido" class="input-padron" required>
+  <main>
+    <section>
+      <h3 class="tittle">Formulario de contacto</h3>
+      <form>
+              <legend>Motivo</legend>
+              <select>
+                  <option>Asesoramiento comercial</option>
+                  <option>Devolucion de dinero</option>
+                  <option>Generacion de etiqueta</option>
+                  <option>Problema de factura</option>
+                  <option>Seguimiento de envio</option>
+              </select> 
+              <label for="mensaje">Mensaje</label>
+              <textarea cols="50" rows="5" id="mensaje" class="input-padron"></textarea>
+              
+              <hr>
+              <label for="nombreyapellido">Nombre y Apellido</label>
+              <input type="text" id="nombreyapellido" class="input-padron" required>
+              <hr>
+              <label for="correoe">Correo electronico</label>
+              <input type="email" id="correoe" class="input-padron" required placeholder="email@dominio.com">
+              <hr>
+              
+              <label for="telefono">Telefono</label>
+              <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+              
+            </section> 
+              <section class="secCol2">
+                <legend>¿Como le gustaria que lo contactemos?</legend>
+              
+              <label for="radio-email"><input type="radio"  name="contacto" id="radio-email" value="email">Email</label>
+            <label for="radio-telefono"><input type="radio"  name="contacto" id="radio-telefono" value="telefono">Telefono</label>
+            <label for="radio-whatsapp"> <input type="radio"  name="contacto" id="radio-whatsapp" value="whatsapp" checked>WhatsApp</label>
             
-                <label for="correoe">Correo electronico</label>
-                <input type="email" id="correoe" class="input-padron" required placeholder="email@dominio.com">
-
-                <label for="telefono">Telefono</label>
-                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
-                
-                <section>
-                    <legend>¿Como le gustaria que lo contactemos?</legend>
-                    
-                    <label for="radio-email"><input type="radio"  name="contacto" id="radio-email" value="email">Email</label>
-
-                    <label for="radio-telefono"><input type="radio"  name="contacto" id="radio-telefono" value="telefono">Telefono</label>
-
-                    <label for="radio-whatsapp"> <input type="radio"  name="contacto" id="radio-whatsapp" value="whatsapp" checked>WhatsApp</label>
-                </section>
-
-  
-                
-                <label><input type="checkbox" class="checkbox" checked>¿Le gustaria recibir novedades de la Empresa</label>
-                
-                <input type="submit" value="Enviar Formulario" class="enviar">
-            </form>
+            <label><input type="checkbox" class="checkbox" checked>¿Le gustaria recibir novedades de la Empresa</label>
+            
+            <input type="submit" value="Enviar Formulario" class="enviar">
+          </form>
+        </section>
+        <section class="secCol3">
+          <h3 class="title">Preguntas Frecuentes</h3>
+            <div class="preguntas">
+                <div>
+                    <p class="pregunta">¿Cómo calcular el precio de mi envío?</p>
+                    <p class="respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur cupiditate libero ducimus aliquid molestiae dolorum error, ullam repellendus deserunt laudantium veniam unde iste inventore accusantium exercitationem odio placeat reiciendis magnam.</p>
+                </div>
+                <div>
+                    <p class="pregunta">¿Cuáles son los horarios de atención en sucursal?</p>
+                    <p class="respuesta">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere itaque quidem quo odio voluptas labore error tenetur vero neque eligendi, aliquam veritatis, esse, doloremque natus officiis consequatur rem ad accusamus!</p>
+                </div>
+                <div>
+                    <p class="pregunta">¿Cómo se abonan los envíos?</p>
+                    <p class="respuesta">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut quibusdam esse, tenetur inventore magni veniam perferendis dolorem dolorum est ab rerum ullam? Cupiditate eos numquam voluptates accusantium, dolorum aliquid vitae.</p>
+                </div>
+                <div>
+                    <p class="pregunta">¿Cómo realizar el seguimiento de mis envíos?</p>
+                    <p class="respuesta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ipsum illum fugiat voluptatum quasi illo eligendi nostrum. Quis quasi, fugiat quo laborum dolores velit nihil, laboriosam dicta ullam eveniet cumque.</p>
+                </div>
+                <div>
+                    <p class="pregunta">¿Cómo puedo reclamar la devolución de un envío?</p>
+                    <p class="respuesta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, asperiores quam totam assumenda suscipit magni aspernatur dicta quos eveniet praesentium laborum quasi sit fugiat dolore esse deleniti libero dolores? Nobis?</p>
+                </div>
+            </div>
+        </section>
              
         </main>
 <footer>
