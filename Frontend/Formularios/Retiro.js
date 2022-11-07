@@ -1,0 +1,1 @@
+const codigo = document.getElementById("x")
