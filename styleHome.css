@@ -265,6 +265,13 @@ iframe{
 #submit-carga{
     margin: 2% 40%;
 }
+#submit-retiro{
+    margin: 2% 40%;
+}
+
+#retiro{
+    margin: 0 25%;
+}
 
 /* ----- -----  Mediaqueries ----- ----- */
 @media (max-width: 980px){
