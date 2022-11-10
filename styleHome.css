@@ -202,3 +202,13 @@ form{
     transition: .5s;
     color: black;
 }
+.error{
+    display: block;
+    color: red;
+    font-size: 14px;
+}
+.success{
+    display: block;
+    color: green;
+    font-size: 14px;
+}

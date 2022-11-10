@@ -43,17 +43,21 @@
     </nav>
   <body>
     <section>
-     <div>
-       <h1>Iniciar sesión</h1>
-       <form action=""><button class="botonNegro" type="submit">Inicio de sesión</button><br>
-
-       <input type="text" placeholder="usuario" name="usuario" required><br>
-       <input type="password" placeholder="contraseña" name="password" required><br>
-    
-       <input type="checkbox">Recordarme</checkbox><br>
-       <button class="botonNegro" type="submit">Ingresar</button><br>
-       </form>
-      </section>
+      <div>
+        <h1>Iniciar sesión</h1>
+        <form action="" id="form"><button class="botonNegro" type="submit">Inicio de sesión</button><br>
+ 
+        <input type="text" placeholder="usuario" id= 'usuario' name="usuario"><br>
+        <span class="errorUsuario" id="errorUsuario"></span>
+        <input type="password" placeholder="contraseña" name="password" id="password"><br>
+        <span class="errorPassword" id="errorPassword"></span>
+        <input title="checkbox" type="checkbox">Recordarme</checkbox><br>
+        <button class="botonNegro" type="submit">Ingresar</button><br>
+        
+        <span class="errorGeneral" id="errorGeneral"></span>
+        <span class="success" id="success"></span>
+        </form>
+       </section>
       <section class="secCol2">
        <br>
        <br>
@@ -81,6 +85,7 @@
          </form>
       </div>
     </section class="secCol3">
+    <script src="./Vistas/JS/inicio-sesion.js"></script>
   </body>
  <footer>
         <div>
@@ -90,8 +95,8 @@
                 <li><a href="costo.html">Costo de envio</a></li>
             </ul>
             <ul class="nosotros">Nosotros
-                <li><a href="byters.html">La empresa</a></li>
-                <li><a href="curriculum.html">Trabaja con nosotros</a></li>
+                <li> <a href="byters.html">La empresa</a></li>
+                <li> <a href="curriculum.html">Trabaja con nosotros</a></li>
                 <li><a href="productos.html">Productos</a></li>
             </ul>
             <ul class="ayuda">Ayuda
