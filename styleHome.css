@@ -314,6 +314,16 @@ iframe{
         border-radius: 0%;
         margin: 0%;
     }
+	
+    .input-padron {
+    box-sizing: border-box;
+    max-width: 80%;
+  }
+
+    .secCol2{
+    width: 100%;
+}
+
 }
 form{
     width: 100%;
@@ -335,12 +345,4 @@ form{
     display: block;
     color: green;
     font-size: 14px;
-}
-.input-padron {
-    box-sizing: border-box;
-    max-width: 80%;
-  }
-
-  .secCol2{
-    width: 100%;
 }
