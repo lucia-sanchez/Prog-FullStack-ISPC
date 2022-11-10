@@ -89,47 +89,76 @@
       </form>
     </section>
     <br /><br />
-
     <section class="secCol2">
       <h2>Retiro</h2>
-      <!--los pedacitos de código que se agrege a "Codigo de Paquete" debería comparar los códigos que se encuentran en la sucursal y ayudarte completandolo-->
-      <input
-        type="text"
-        placeholder="Código de Paquete"
-        name="Código de Paquete"
-        required
-      />
-      <!--en el botón "Retirar" tiene que controlar que el código ingresado en el imput "Código de Paquete" coincida con 1 de los paquetes que se encuentran dentro de la sucursal desde donde se está anotando, de ser correcto tiene que cambiar el estado del paquete de "Por Pagar" a "Pagado", también colocarle e lrasgo "Entregado" y guardarle la fecha, la hora y la sucursal de la cual fue retirado-->
-      <button class="botonNegro" style="background-color: orange" type="submit">
-        Retirar</button
-      ><br />
+      <form action="" id="formR">
+        <input type="text" placeholder="Codigo de Paquete" name="codigoPaquete" id="retiro" required class="inputD"/>
+        <button class="botonNegro" style="background-color: orange" type="submit" id="submit-retiro">Retirar</button><br />
+      </form>
     </section>
-    <br /><br />
 
-    <section class="secCol3">
+  <section class="secCol3">
       <h2>Carga</h2>
-      <textarea name="" id="" cols="30" rows="5"></textarea><br />
-      <select name="" id="">
-        <option value="">Vehículos</option>
-        <option value="">Renault 12</option>
-        <option value="">Ford Focus</option>
-        <option value="">Fiat Palio</option>
-      </select>
-      <button class="botonNegro" type="submit">Salida</button>
+      <form action="" id="formC" class="formulariocarga">
+        <div>
+          <input type="text" placeholder="Codigo del paquete" name="codigo" id="Codigo" class="inputD">
+        </div>
+        <div>
+          <input type="date" name="fecha" id="Fecha" class="inputD">
+        </div>
+        <div>
+          <input type="time" name="hora" id="Hora" class="inputD">
+        </div>
+          <select name="sucursales" id="Sucursales" class="inputD">
+              <option value="">Sucursales</option>
+              <option value="">Sucursal 1</option>
+              <option value="">Sucursal 2</option>
+              <option value="">Sucursal 3</option>
+          </select>
+        <div>
+          <select name="vehiculos" id="Vehiculos" class="inputD">
+            <option value="">Vehículos</option>
+            <option value="">Renault 12</option>
+            <option value="">Ford Focus</option>
+            <option value="">Fiat Palio</option>
+          </select>
+        </div>
+        <button class="botonNegro" type="submit" id="submit-carga">Salida</button>
+
+      </form>
     </section>
-    <br /><br />
 
     <section>
       <h2>Descarga</h2>
-      <textarea name="" id="" cols="30" rows="5"></textarea><br />
-      <select name="" id="">
-        <option value="">Vehículos</option>
-        <option value="">Renault 12</option>
-        <option value="">Ford Focus</option>
-        <option value="">Fiat Palio</option>
-      </select>
-      <button class="botonNegro" type="submit">Llegada</button><br />
+      <form action="" id="formD" class="formularioDescarga">
+        <div>
+          <input type="text" placeholder="Codigo del paquete" name="codigo" id="codigo" class="inputD">
+        </div>
+        <div>
+          <input type="date" name="fecha" id="fecha" class="inputD">
+        </div>
+        <div>
+          <input type="time" name="hora" id="hora" class="inputD">
+        </div>
+          <select name="sucursales" id="sucursales" class="inputD">
+              <option value="">Sucursales</option>
+              <option value="">Sucursal 1</option>
+              <option value="">Sucursal 2</option>
+              <option value="">Sucursal 3</option>
+          </select>
+        <div>
+          <select name="vehiculos" id="vehiculos" class="inputD">
+            <option value="">Vehículos</option>
+            <option value="">Renault 12</option>
+            <option value="">Ford Focus</option>
+            <option value="">Fiat Palio</option>
+          </select>
+        </div>
+        <button class="botonNegro" type="submit" id="submitLlegada-disabled">Llegada</button>
+
+      </form>
     </section>
+    
     <section class="secCol2">
       <form action="">
         <label for="ubicacion">Ubicación actual</label>
