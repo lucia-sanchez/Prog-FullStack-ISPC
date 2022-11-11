@@ -60,14 +60,13 @@
     </section>
     <section class="secCol2" id="bloque-calculo">
       <h2>¿Querés hacer un envío?</h2>
-      <input type="text" placeholder="Peso" name="Peso" required />
-      <label for="">Tipo de Envio</label>
+      <input type="text" id="peso" placeholder="Peso kg" name="Peso" /><br />
+      <div><label for="">Tipo de Envio</label>
       <select name="" id="">
-        <option value="">A</option>
-        <option value="">B</option>
-        <option value="">C</option>
+        <option value="">A Ligero</option>
+        <option value="">B Pesado</option>
+        <option value="">C Express</option></div>
       </select>
-      <br />
       <select name="" id="">
         <option value="">Salida</option>
         <option value="">Sucursal Ushuaia</option>
@@ -80,8 +79,16 @@
         <option value="">Sucursal Fosa de las Marianas</option>
         <option value="">Sucursal Júpiter</option></select
       ><br />
-      <input type="text" placeholder="Precio" name="Precio" required />
-      <form action=""><button type="submit">Calcular</button></form>
+      <input
+        type="text"
+        placeholder="Precio"
+        name="Precio"
+        required
+      />
+      <form action="">
+        <button type="submit" onclick="return enviarCalculo();" >Calcular</button>
+        <p class="errorE" id="errorE"></p>
+      </form>
       <br /><br />
     </section>
     <section class="secCol3" id="bloque-sucursales">
@@ -208,5 +215,6 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <script src="./emi js/EMIformularioCalculadoraDePreciosYMás.js"></script>
   </body>
 </html>

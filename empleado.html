@@ -56,18 +56,18 @@
     <section>
       <h2>Registro</h2>
       <input
-        type="text"
+        type="text" id="DNI"
         placeholder="DNI destinatario"
         name="DNI destinatario"
         required
       /><br />
       <input
-        type="text"
+        type="text" id="DNI2"
         placeholder="DNI remitente"
         name="DNI remitente"
         required
       /><br />
-      <input type="text" placeholder="Peso" name="Peso" required />
+      <input type="text" id="peso" placeholder="Peso" name="Peso" />
       <label for="">Tipo de Envio</label>
       <select name="" id="">
         <option value="">A</option>
@@ -75,9 +75,7 @@
         <option value="">C</option>
       </select>
       <br />
-      <!--en el input "Destino" devería mostrar los destinos posibles haciendo una busqueda que coincida con las palabras que se vayan escribiendo en la barra de busqueda-->
       <input type="text" placeholder="Destino" name="Destino" required /><br />
-      <!--acá el imput "Precio", usando la información de peso, tipo de envio, destino y sucursal que regitra el paquete, debería hacer el calculo de cuanto costaría y mostrarlo-->
       <input type="text" placeholder="Precio" name="Precio" required />
       <label for="">Estado</label>
       <select name="" id="">
@@ -85,7 +83,7 @@
         <option value="">Por Pagar</option></select
       ><br />
       <form action="">
-        <button class="botonNegro" type="submit">Guardar</button><br />
+        <button class="botonNegro" type="submit" onclick="return enviarRegistro();">Guardar</button><br />
       </form>
     </section>
     <br /><br />
@@ -212,5 +210,6 @@
       </div>
     </footer>
     <script src="empleado.js"></script>
+    <script src="./emi js/EMIformularioCalculadoraDePreciosYMás.js"></script>
   </body>
 </html>
