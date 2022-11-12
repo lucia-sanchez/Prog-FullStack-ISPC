@@ -44,25 +44,27 @@
         <i class="fas fa-bars"></i>
       </label>
       <ul>
-        <li><a class="" href="">Inicio</a></li>
-        <li><a href="">Seguimiento</a></li>
+        <li><a class="" href="../index.html">Inicio</a></li>
+        <!-- <li><a href="../index.html">Seguimiento</a></li>
         <li><a href="#bloque-calculo">Calculadora</a></li>
         <li><a href="#bloque-sucursales">Sucursales</a></li>
-        <li><a href="#carrusel">Nosotros</a></li>
-        <li><a href="">Contacto</a></li>
+        <li><a href="#carrusel">Nosotros</a></li> -->
+        <li><a href="formulario-contacto.html">Contacto</a></li>
       </ul>
     </nav>
 
     <section>
       <h2>Registro</h2>
       <input
-        type="text" id="DNI"
+        type="text"
+        id="DNI"
         placeholder="DNI destinatario"
         name="DNI destinatario"
         required
       /><br />
       <input
-        type="text" id="DNI2"
+        type="text"
+        id="DNI2"
         placeholder="DNI remitente"
         name="DNI remitente"
         required
@@ -83,36 +85,62 @@
         <option value="">Por Pagar</option></select
       ><br />
       <form action="">
-        <button class="botonNegro" type="submit" onclick="return enviarRegistro();">Guardar</button><br />
+        <button
+          class="botonNegro"
+          type="submit"
+          onclick="return enviarRegistro();"
+        >
+          Guardar</button
+        ><br />
       </form>
     </section>
     <br /><br />
     <section class="secCol2">
       <h2>Retiro</h2>
       <form action="" id="formR">
-        <input type="text" placeholder="Codigo de Paquete" name="codigoPaquete" id="retiro" required class="inputD"/>
-        <button class="botonNegro" style="background-color: orange" type="submit" id="submit-retiro">Retirar</button><br />
+        <input
+          type="text"
+          placeholder="Codigo de Paquete"
+          name="codigoPaquete"
+          id="retiro"
+          required
+          class="inputD"
+        />
+        <button
+          class="botonNegro"
+          style="background-color: orange"
+          type="submit"
+          id="submit-retiro"
+        >
+          Retirar</button
+        ><br />
       </form>
     </section>
 
-  <section class="secCol3">
+    <section class="secCol3">
       <h2>Carga</h2>
       <form action="" id="formC" class="formulariocarga">
         <div>
-          <input type="text" placeholder="Codigo del paquete" name="codigo" id="Codigo" class="inputD">
+          <input
+            type="text"
+            placeholder="Codigo del paquete"
+            name="codigo"
+            id="Codigo"
+            class="inputD"
+          />
         </div>
         <div>
-          <input type="date" name="fecha" id="Fecha" class="inputD">
+          <input type="date" name="fecha" id="Fecha" class="inputD" />
         </div>
         <div>
-          <input type="time" name="hora" id="Hora" class="inputD">
+          <input type="time" name="hora" id="Hora" class="inputD" />
         </div>
-          <select name="sucursales" id="Sucursales" class="inputD">
-              <option value="">Sucursales</option>
-              <option value="">Sucursal 1</option>
-              <option value="">Sucursal 2</option>
-              <option value="">Sucursal 3</option>
-          </select>
+        <select name="sucursales" id="Sucursales" class="inputD">
+          <option value="">Sucursales</option>
+          <option value="">Sucursal 1</option>
+          <option value="">Sucursal 2</option>
+          <option value="">Sucursal 3</option>
+        </select>
         <div>
           <select name="vehiculos" id="Vehiculos" class="inputD">
             <option value="">Vehículos</option>
@@ -121,8 +149,9 @@
             <option value="">Fiat Palio</option>
           </select>
         </div>
-        <button class="botonNegro" type="submit" id="submit-carga">Salida</button>
-
+        <button class="botonNegro" type="submit" id="submit-carga">
+          Salida
+        </button>
       </form>
     </section>
 
@@ -130,20 +159,26 @@
       <h2>Descarga</h2>
       <form action="" id="formD" class="formularioDescarga">
         <div>
-          <input type="text" placeholder="Codigo del paquete" name="codigo" id="codigo" class="inputD">
+          <input
+            type="text"
+            placeholder="Codigo del paquete"
+            name="codigo"
+            id="codigo"
+            class="inputD"
+          />
         </div>
         <div>
-          <input type="date" name="fecha" id="fecha" class="inputD">
+          <input type="date" name="fecha" id="fecha" class="inputD" />
         </div>
         <div>
-          <input type="time" name="hora" id="hora" class="inputD">
+          <input type="time" name="hora" id="hora" class="inputD" />
         </div>
-          <select name="sucursales" id="sucursales" class="inputD">
-              <option value="">Sucursales</option>
-              <option value="">Sucursal 1</option>
-              <option value="">Sucursal 2</option>
-              <option value="">Sucursal 3</option>
-          </select>
+        <select name="sucursales" id="sucursales" class="inputD">
+          <option value="">Sucursales</option>
+          <option value="">Sucursal 1</option>
+          <option value="">Sucursal 2</option>
+          <option value="">Sucursal 3</option>
+        </select>
         <div>
           <select name="vehiculos" id="vehiculos" class="inputD">
             <option value="">Vehículos</option>
@@ -152,11 +187,12 @@
             <option value="">Fiat Palio</option>
           </select>
         </div>
-        <button class="botonNegro" type="submit" id="submitLlegada-disabled">Llegada</button>
-
+        <button class="botonNegro" type="submit" id="submitLlegada-disabled">
+          Llegada
+        </button>
       </form>
     </section>
-    
+
     <section class="secCol2">
       <form action="">
         <label for="ubicacion">Ubicación actual</label>
@@ -209,7 +245,7 @@
         <a href="#"><i class="fa-brands fa-instagram">Instagram</i></a>
       </div>
     </footer>
-    <script src="empleado.js"></script>
-    <script src="./emi js/EMIformularioCalculadoraDePreciosYMás.js"></script>
+    <script src="Frontend/Javascript/empleado.js"></script>
+    <script src="Frontend/Javascript/EMIformularioCalculadoraDePreciosYMás.js"></script>
   </body>
 </html>
