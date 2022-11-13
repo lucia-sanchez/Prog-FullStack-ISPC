@@ -15,12 +15,12 @@ ingresar.addEventListener('submit', (e) => {
     validarEmpty(mail.value, mail, mensaje, 'mail');
     validarUsuario(user.value);
     validarMail(mail.value);
-    if(validarUsuario()){
+    if(validarUser()){
         mensaje.innerHTML = ``;
     }else if (user.value.length != 0){
         userError.innerHTML = `<p class = "error">⚠ El usuario ingresado es incorrecto</p>`;
     }
-    if(validarMail(mail.value)){
+    if(validarMail(mail.value) && validarUser()){
         mensaje.innerHTML = `<p class= "success"> Se ha enviado un e-mail para restablecer su contaseña</p>`;
     }
     else{
@@ -58,7 +58,7 @@ divInput.style.border = '1px solid black';
 divError.innerHTML = ``;
 
 } 
-function validarUsuario(){
+function validarUser(){
     let usuarioValido = false;
     for(let i = 0; i < usuariosPermitidos.length; i++){
         if(user.value == usuariosPermitidos[i]){

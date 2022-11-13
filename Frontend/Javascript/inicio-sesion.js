@@ -1,17 +1,17 @@
-const usuariosValidos= [{usuario:'33.545.898',
+let usuariosValidos= [{usuario:'33.545.898',
                         password:'12345678' },
 
                         {usuario:'25.464.878',
-                         password:'12345677' },
+                         password:'12345678' },
 
                         {usuario:'35.698.654',
-                        password:'12345677'}, 
+                        password:'12345678'}, 
 
                         {usuario:'20.656.471',
-                        password:'12345677'},
+                        password:'12345678'},
 
                         {usuario:'34.216.873',
-                        password:'12345677'}];
+                        password:'12345678'}];
 //PARA VALIDAR SI EL USUARIO EXISTE DEBERIA BUSCARLO EN LA BASE DE DATOS
 //COMO AÚN NO ESTA CONECTADA, LO BUSCA DENTRO DEL ARRAY DE USUARIOS VALIDOS
 
