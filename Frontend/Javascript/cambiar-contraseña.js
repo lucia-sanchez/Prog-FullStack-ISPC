@@ -1,13 +1,9 @@
-const usuariosPermitidos = ['33.545.898',
-                '25.464.878',                    
-                '35.698.654',
-                '20.656.471',
-                '34.216.873',];
-
+let usuariosPermitidos = ['33.545.898','25.464.878','35.698.654','20.656.471','34.216.873'];
+                
 //PARA VALIDAR SI EL USUARIO EXISTE DEBERIA BUSCARLO EN LA BASE DE DATOS
 //COMO AÚN NO ESTA CONECTADA, LO BUSCA DENTRO DEL ARRAY DE USUARIOS VALIDOS
 
-const usuario = document.getElementById('id-usuario');
+const user = document.getElementById('id-usuario');
 const mail = document.getElementById('mail');
 const userError = document.getElementById('userError');
 const mensaje = document.getElementById('mensaje');
@@ -15,13 +11,13 @@ const ingresar = document.getElementById('ingresar');
 
 ingresar.addEventListener('submit', (e) => {
     e.preventDefault();
-    validarEmpty(usuario.value, usuario, userError, 'usuario');
+    validarEmpty(user.value, user, userError, 'usuario');
     validarEmpty(mail.value, mail, mensaje, 'mail');
-    validarUsuario(usuario.value);
+    validarUsuario(user.value);
     validarMail(mail.value);
     if(validarUsuario()){
         mensaje.innerHTML = ``;
-    }else if (usuario.value.length != 0){
+    }else if (user.value.length != 0){
         userError.innerHTML = `<p class = "error">⚠ El usuario ingresado es incorrecto</p>`;
     }
     if(validarMail(mail.value)){
@@ -32,7 +28,7 @@ ingresar.addEventListener('submit', (e) => {
     }
 }); 
 function validarEmpty(valueInput, divInput, divError, nameInput){
-    if(valueInput.length == 0){
+    if(valueInput.length === 0){
         showError(divInput, divError, nameInput);     
     }else{
         hideError(divInput, divError);
@@ -64,8 +60,8 @@ divError.innerHTML = ``;
 } 
 function validarUsuario(){
     let usuarioValido = false;
-    for(let i = 0; i < usuariosValidos.length; i++){
-        if(usuario.value == usuariosValidos[i].usuario){
+    for(let i = 0; i < usuariosPermitidos.length; i++){
+        if(user.value == usuariosPermitidos[i]){
             usuarioValido = true;
         }
     }
