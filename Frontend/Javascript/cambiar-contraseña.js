@@ -1,17 +1,8 @@
-const usuariosValidos= [{usuario:'33.545.898',
-                        password:'12345678' },
-
-                        {usuario:'25.464.878',
-                         password:'12345677' },
-
-                        {usuario:'35.698.654',
-                        password:'12345677'}, 
-
-                        {usuario:'20.656.471',
-                        password:'12345677'},
-
-                        {usuario:'34.216.873',
-                        password:'12345677'}];
+const usuariosPermitidos = ['33.545.898',
+                '25.464.878',                    
+                '35.698.654',
+                '20.656.471',
+                '34.216.873',];
 
 //PARA VALIDAR SI EL USUARIO EXISTE DEBERIA BUSCARLO EN LA BASE DE DATOS
 //COMO AÚN NO ESTA CONECTADA, LO BUSCA DENTRO DEL ARRAY DE USUARIOS VALIDOS
@@ -20,9 +11,9 @@ const usuario = document.getElementById('id-usuario');
 const mail = document.getElementById('mail');
 const userError = document.getElementById('userError');
 const mensaje = document.getElementById('mensaje');
-const ingreso = document.getElementById('ingreso');
+const ingresar = document.getElementById('ingresar');
 
-ingreso.addEventListener('click', (e) => {
+ingresar.addEventListener('submit', (e) => {
     e.preventDefault();
     validarEmpty(usuario.value, usuario, userError, 'usuario');
     validarEmpty(mail.value, mail, mensaje, 'mail');

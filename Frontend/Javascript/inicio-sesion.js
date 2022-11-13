@@ -28,7 +28,7 @@ form.addEventListener('submit', (e) => {
     validarEmpty(usuario.value, usuario, errorUsuario, 'usuario');
     validarEmpty(password.value, password, errorPassword, 'contraseña');
     if(validarUsuario()){
-        success.innerHTML = `<p class = "success"> Ingreso exitoso! </p>`;
+        errorGeneral.innerHTML = `<p class = "success"> Ingreso exitoso! </p>`;
     }else if (usuario.value.length != 0 && password.value.length != 0){
         errorGeneral.innerHTML = `<p class = "error">⚠ El usuario o contraseña ingresados son incorrectos</p>`;
     }

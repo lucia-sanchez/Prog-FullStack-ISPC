@@ -335,6 +335,12 @@ iframe{
 form{
     width: 100%;
 }
+#botonIngresar{
+    background-color: orange;
+}
+#botonOlvidePass{
+background-color: orange;
+}
 .botonNegro{
     background-color: black;
 }
