@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front-Line Envios</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styleHome.css" />
+  </head>
+  <body>
+    <header>
+      <div class="headerCont">
+        <img class="logo" src="images/Logo-FLEnvios naranja.png" alt="logo" />
+        <div class="botones">
+          <a href="iniciar_sesion.html"><button type="submit" id="ingreso">Ingresar</button></a>
+          <a href="iniciar_sesion.html"><button type="submit" id="registro">Registrarse</button></a>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <input type="checkbox" name="check" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="" href="../index.html">Inicio</a></li>
+        <!-- <li><a href="">Seguimiento</a></li>
+        <li><a href="#bloque-calculo">Calculadora</a></li>
+        <li><a href="#bloque-sucursales">Sucursales</a></li>
+        <li><a href="#carrusel">Nosotros</a></li> -->
+        <!-- <li><a href="formulario-contacto.html">Contacto</a></li> -->
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h3 class="tittle">Formulario de contacto</h3>
+        <form action="" id="formC">
+          <legend>Motivo</legend>
+            <select>
+              <option>Asesoramiento comercial</option>
+              <option>Devolucion de dinero</option>
+              <option>Generacion de etiqueta</option>
+              <option>Problema de factura</option>
+              <option>Seguimiento de envio</option>
+            </select> 
+            <label for="mensaje">Mensaje</label>
+            <textarea cols="40" rows="7" id="mensaje" class="input-padron"></textarea>
+            
+            <div class="formulario__g" id="grupo__nombre">
+              <label for="nombreyapellido">Nombre y Apellido</label>
+              <div class="formulario__grupo-input"></div>
+                <input type="text" id="nombreyapellido" class="input-padron" name="nombre"><!--required-->
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                <p class="formulario__input-error">el nombre solo puede contener letras y espacios, pueden llevar acentos</p>
+              </div>
+              </div>
+  
+            <div class="formulario__g" id="grupo__correo">
+              <label for="correo">Correo electronico</label>
+              <div class="formulario__grupo-input"></div>
+                <input type="email" id="correoe" class="input-padron" name="correo" placeholder="email@dominio.com"><!--required-->
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+              </div>
+              </div>
+  
+            <div class="formulario__g" id="grupo__telefono">    
+              <label for="telefono">Telefono</label>
+              <div class="formulario__grupo-input"></div>
+                <input type="tel" id="telefono" class="input-padron" name="telefono" placeholder="(XX) XXXX XXXX"><!--required-->
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+              </div>
+              </div>    
+             
+            <section class="secCol2c">
+              <legend class="legend2">¿Como le gustaria que lo contactemos?</legend>
+               <div class=""> 
+                  <label for="radio-email"><input type="radio"  name="contacto" id="radio-email" value="email" >Email</label>
+                  <label for="radio-telefono"><input type="radio"  name="contacto" id="radio-telefono" value="telefono">Telefono</label>
+                  <label for="radio-whatsapp"> <input type="radio"  name="contacto" id="radio-whatsapp" value="whatsapp" checked>WhatsApp</label>
+                </div>
+                <label><input type="checkbox" class="checkbox" name="novedades" checked>Me gustaria recibir novedades de la Empresa</label>
+            </section>
+
+              
+            <div class="formulario__mensaje" id="formulario__mensaje">
+              <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario. </p>
+            </div>
+            
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+              <button type="submit" class="formulario__btn">Enviar</button>
+              <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+            </div>
+            <!--<input type="submit" value="Enviar Formulario" class="enviar">-->
+        </form>
+      </section>
+
+        <section class="secCol3">
+          <h3 class="title">Preguntas Frecuentes</h3>
+            <div class="preguntas">
+              <div>
+                <p class="pregunta">¿Cómo calcular el precio de mi envío?</p>
+                <p class="respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur cupiditate libero ducimus aliquid molestiae dolorum error, ullam repellendus deserunt laudantium veniam unde iste inventore accusantium exercitationem odio placeat reiciendis magnam.</p>
+              </div>
+              
+              <div>
+                <p class="pregunta">¿Cuáles son los horarios de atención en sucursal?</p>
+                <p class="respuesta">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere itaque quidem quo odio voluptas labore error tenetur vero neque eligendi, aliquam veritatis, esse, doloremque natus officiis consequatur rem ad accusamus!</p>
+              </div>
+              
+              <div>
+                <p class="pregunta">¿Cómo se abonan los envíos?</p>
+                <p class="respuesta">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut quibusdam esse, tenetur inventore magni veniam perferendis dolorem dolorum est ab rerum ullam? Cupiditate eos numquam voluptates accusantium, dolorum aliquid vitae.</p>
+              </div>
+              
+              <div>
+                <p class="pregunta">¿Cómo realizar el seguimiento de mis envíos?</p>
+                <p class="respuesta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ipsum illum fugiat voluptatum quasi illo eligendi nostrum. Quis quasi, fugiat quo laborum dolores velit nihil, laboriosam dicta ullam eveniet cumque.</p>
+              </div>
+              
+              <div>
+                <p class="pregunta">¿Cómo puedo reclamar la devolución de un envío?</p>
+                <p class="respuesta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, asperiores quam totam assumenda suscipit magni aspernatur dicta quos eveniet praesentium laborum quasi sit fugiat dolore esse deleniti libero dolores? Nobis?</p>
+              </div>
+            </div>
+        </section>
+             
+      </main>
+    <footer>
+      <div>
+        <ul class="dudas">Que necesitas saber?
+          <li><a href="envio.html"> Seguir un envio</a></li>
+          <li><a href="maps.html">Sucursales</a></li>
+          <li><a href="costo.html">Costo de envio</a></li>
+        </ul>
+        <ul class="nosotros">Nosotros
+          <li><a href="byters.html">La empresa</a></li>
+          <li><a href="curriculum.html">Trabaja con nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+        </ul>
+        <ul class="ayuda">Ayuda
+          <li><a href="preguntas-frecuentes.html"> Preguntas frecuentes</a></li>
+          <li>0800-XXX-XXXX</li>
+          <li>atenciondigital@byters.com</li>
+        </ul>
+      </div>    
+      <div class="redes">Nuestras redes
+        <a href="#"><i class="fa-brands fa-facebook">Facebook</i></a>
+        <a href="#"><i class="fa-brands fa-twitter">Twitter</i></a>
+        <a href="#"><i class="fa-brands fa-instagram">Instagram</i></a>
+      </div>
+    
+    </footer>
+    <script src="./Javascript/formulario-contacto.js"></script>   
+  </body>
